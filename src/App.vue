@@ -4,18 +4,21 @@
     <header>
       <!-- section-1 header -->
       <Sec1Header />
-
+      <!-- section-2 header -->
+      <Sec2Header />
     </header>
   </div>
 </template>
 
 <script>
 import Sec1Header from '@/components/Sec1Header.vue';
+import Sec2Header from '@/components/Sec2Header.vue';
 
 export default {
   name: 'App',
   components: {
     Sec1Header,
+    Sec2Header,
   }
 }
 </script>
