@@ -83,6 +83,7 @@ export default {
     }
     .listnavigation {
         list-style: none;
+        cursor: pointer;
         li {
             align-items: baseline;
             padding-right: 2rem;
@@ -93,6 +94,7 @@ export default {
         }
     }
     .listsocials {
+        cursor: pointer;
         display: flex;
         list-style: none;
         .social {
