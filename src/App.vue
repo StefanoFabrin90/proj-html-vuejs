@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+
+
     <!-- HEADER -->
     <header>
       <!-- section-1 header -->
@@ -9,6 +11,14 @@
       <!-- Hero -->
       <Hero />
     </header>
+
+
+    <!-- MAIN -->
+    <main>
+      <!-- section-1 main -->
+      <Sec1Main />
+      <!-- section-2 main -->
+    </main>
   </div>
 </template>
 
@@ -16,6 +26,7 @@
 import Sec1Header from '@/components/Sec1Header.vue';
 import Sec2Header from '@/components/Sec2Header.vue';
 import Hero from '@/components/Hero.vue';
+import Sec1Main from '@/components/Sec1Main.vue';
 
 export default {
   name: 'App',
@@ -23,6 +34,7 @@ export default {
     Sec1Header,
     Sec2Header,
     Hero,
+    Sec1Main,
   }
 }
 </script>
@@ -30,5 +42,6 @@ export default {
 <style lang="scss">
 * {
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 </style>
