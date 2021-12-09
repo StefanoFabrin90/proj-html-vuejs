@@ -74,7 +74,6 @@ export default {
 <style scoped lang="scss">
 .homepage {
     width: 100vw;
-    background-color: yellow;
     color: gray;
     .logoBrand {
         img {
