@@ -23,6 +23,8 @@
       <Sec3Main />
       <!-- section-4 main -->
       <Sec4Main />
+      <!-- section-5 main -->
+      <Sec5Main />
     </main>
   </div>
 </template>
@@ -35,6 +37,7 @@ import Sec1Main from '@/components/Sec1Main.vue';
 import Sec2Main from '@/components/Sec2Main.vue';
 import Sec3Main from '@/components/Sec3Main.vue';
 import Sec4Main from '@/components/Sec4Main.vue';
+import Sec5Main from '@/components/Sec5Main.vue';
 
 export default {
   name: 'App',
@@ -46,6 +49,7 @@ export default {
     Sec2Main,
     Sec3Main,
     Sec4Main,
+    Sec5Main,
   }
 }
 </script>
