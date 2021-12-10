@@ -21,6 +21,8 @@
       <Sec2Main />
       <!-- section-3 main -->
       <Sec3Main />
+      <!-- section-4 main -->
+      <Sec4Main />
     </main>
   </div>
 </template>
@@ -32,6 +34,7 @@ import Hero from '@/components/Hero.vue';
 import Sec1Main from '@/components/Sec1Main.vue';
 import Sec2Main from '@/components/Sec2Main.vue';
 import Sec3Main from '@/components/Sec3Main.vue';
+import Sec4Main from '@/components/Sec4Main.vue';
 
 export default {
   name: 'App',
@@ -42,6 +45,7 @@ export default {
     Sec1Main,
     Sec2Main,
     Sec3Main,
+    Sec4Main,
   }
 }
 </script>
