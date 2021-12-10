@@ -26,5 +26,12 @@ export default {
 <style scoped lang="scss">
 .card {
     border: none;
+    p {
+        color: #f07c44;
+    }
+    i, span {
+        color: #595959;
+        padding: 10px 10px 0px 0px;
+    }
 }
 </style>
