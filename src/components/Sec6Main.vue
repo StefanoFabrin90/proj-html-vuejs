@@ -5,7 +5,7 @@
                 <p>Article and Tips</p>
                 <h2>Let's Work Together</h2>
             </div>
-            <div class="d-flex">
+            <div class="d-flex mb-5">
                 <div class="cardItem">
                     <div class="item">
                         <div class="poster">
@@ -47,6 +47,9 @@
                     </div>
                 </div>
             </div>
+            <div class="info">
+                <p>Get into details now?<span class="mx-2">View all posts  <i class="fas fa-long-arrow-alt-right align-middle"></i></span></p>
+            </div>
         </div>
     </section>
 </template>
@@ -69,6 +72,15 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    .info {
+        p {
+            color: #a3b1cd;
+            span {
+                color: #ef743b;
+                text-decoration: underline;
+            }
+        }
+    }
     .title {
         p {
             color: #73c6f1;

@@ -42,7 +42,7 @@ export default {
                     job: "/Freelancer",
                 },
                 {
-                    title: "It's a choise of quality for people with special needs",
+                    title: "It's a choice of quality for people with special needs",
                     subtitle: "I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to to make things right and shine. MaxCoach guys just got to me.",
                     avatar: require("@/assets/artist-testimonial-avatar-03.jpg"),
                     Name: "Florence Themes",
