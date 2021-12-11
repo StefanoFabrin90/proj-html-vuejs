@@ -30,6 +30,12 @@
       <!-- section-7 main -->
       <Sec7Main />
     </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <!-- section-1 footer -->
+      <Sec1Footer />
+    </footer>
   </div>
 </template>
 
@@ -44,6 +50,7 @@ import Sec4Main from '@/components/Sec4Main.vue';
 import Sec5Main from '@/components/Sec5Main.vue';
 import Sec6Main from '@/components/Sec6Main.vue';
 import Sec7Main from '@/components/Sec7Main.vue';
+import Sec1Footer from '@/components/Sec1Footer.vue';
 
 export default {
   name: 'App',
@@ -58,6 +65,7 @@ export default {
     Sec5Main,
     Sec6Main,
     Sec7Main,
+    Sec1Footer,
   }
 }
 </script>
