@@ -5,7 +5,7 @@
     <!-- HEADER -->
     <header>
       <!-- section-1 header -->
-      <Sec1Header />
+      <Sec1Header id="1"/>
       <!-- section-2 header -->
       <Sec2Header />
       <!-- Hero -->
@@ -35,6 +35,8 @@
     <footer>
       <!-- section-1 footer -->
       <Sec1Footer />
+      <!-- section-2 footer -->
+      <Sec2Footer />
     </footer>
   </div>
 </template>
@@ -51,6 +53,7 @@ import Sec5Main from '@/components/Sec5Main.vue';
 import Sec6Main from '@/components/Sec6Main.vue';
 import Sec7Main from '@/components/Sec7Main.vue';
 import Sec1Footer from '@/components/Sec1Footer.vue';
+import Sec2Footer from '@/components/Sec2Footer.vue';
 
 export default {
   name: 'App',
@@ -66,6 +69,7 @@ export default {
     Sec6Main,
     Sec7Main,
     Sec1Footer,
+    Sec2Footer,
   }
 }
 </script>
@@ -74,5 +78,8 @@ export default {
 * {
   font-family: sans-serif;
   overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
 }
 </style>
