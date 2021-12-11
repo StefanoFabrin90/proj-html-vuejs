@@ -1,7 +1,7 @@
 <template>
     <div class="card h-100 p-3">
         <img :src="image" :alt="title">
-        <div class="p-3">
+        <div class="p-3 itemCard">
             <p> {{ textOne }} </p>
             <h5> {{ title }} </h5>
             <i class="fas fa-file-alt"></i><span> {{ textTwo }} </span>
@@ -32,6 +32,15 @@ export default {
     i, span {
         color: #595959;
         padding: 10px 10px 0px 0px;
+        transition: transfrom .2s;
+    }
+    .itemCard {
+        border: 1px solid transparent;
+        &:hover {
+            border: 1px solid #f07c44;
+            transform: scale(1.1);
+            background-color: white;
+        }
     }
 }
 </style>
