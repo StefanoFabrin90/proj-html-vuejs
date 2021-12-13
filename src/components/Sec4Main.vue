@@ -62,27 +62,29 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '@/styles/variables';
 .main {
-    background-color: #f1efee;
+    background-color: $backgroung-header;
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
         p {
-            color: #73c6f1;
+            color: $primary-color-p
         }
         h1 {
             font-weight: 900;
         }
         .testimonial {
             background-color: white;
+            box-shadow: 0 15px 10px -10px rgba(0,0,0, .2);
             padding: 30px;
             margin-bottom: 30px;
             h5 {
-                color: #424242;
+                color: $color-black;
             }
             h6 {
-                color: #747474;
+                color: $primary-color-text;
                 padding: 5px 0;
             }
             .information {
@@ -97,7 +99,7 @@ export default {
                     justify-content: center;
                     margin-left: 10px;
                     .job {
-                        color: #747474;
+                        color: $primary-color-text;
                         font-size: 12px;
                     }
                 }

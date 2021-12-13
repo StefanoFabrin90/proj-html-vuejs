@@ -51,6 +51,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '@/styles/variables';
 .main {
     height: 500px;
     background-image: url('../assets/maxcoach-shape-14-768x172.png');
@@ -65,7 +66,7 @@ export default {
     .text {
         text-align: center;
         p {
-        color: #6fc6f1;
+        color: $primary-color-p;
         }
     }
     

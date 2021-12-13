@@ -99,21 +99,22 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '@/styles/variables';
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     .title {
         p {
-            color: #73c6f1;
+            color: $primary-color-p;
         }
         h2 {
             font-weight: 900;
         }
     }
     .button {
-        background-color: #fdf0ea;
-        color: #ef793f;
+        background-color: $backgroung-btn;
+        color: $color-btn;
         padding: 8px 40px;
     }
 }

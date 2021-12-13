@@ -27,6 +27,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '@/styles/variables';
 .main {
     height: 500px;
     display: flex;
@@ -37,14 +38,14 @@ export default {
             font-weight: 900;
         }
         p {
-            color: #73c6f1;
+            color: $primary-color-p;
         }
     }
     .text {
-        color: #747881;
+        color: $primary-color-text;
         .btn-text {
-            background-color: #fdf0ea;
-            color: #ef793f;
+            background-color: $backgroung-btn;
+            color: $color-btn;
             padding: 8px 40px;
         }
     }

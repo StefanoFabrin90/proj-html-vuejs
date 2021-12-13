@@ -20,16 +20,17 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '@/styles/variables';
 .time {
     width: 100vw;
-    background-color:#f5f5f5;
+    background-color:$backgroung-header;
     font-weight: 200;
     .header {
         justify-content: center;
         padding: 5px;
         .text {
             padding-right: 15px;
-            color: #777777;
+            color: $primary-color-text;
             span {
                 text-transform: uppercase;
             }
@@ -42,7 +43,7 @@ export default {
         }
         .geticket {
             padding: 5px 40px;
-            background-color: #ef6f31;
+            background-color: $color-btn;
             color: white;
         }
     }

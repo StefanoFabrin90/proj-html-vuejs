@@ -26,6 +26,7 @@ export default {
 <style scoped lang="scss">
 .card {
     border: none;
+    position: relative;
     p {
         color: #f07c44;
     }
@@ -38,8 +39,11 @@ export default {
         border: 1px solid transparent;
         &:hover {
             border: 1px solid #f07c44;
-            transform: scale(1.1);
+            //transform: scale(1.1);
             background-color: white;
+            position: absolute;
+            bottom: 50px;
+            width: 80%;
         }
     }
 }

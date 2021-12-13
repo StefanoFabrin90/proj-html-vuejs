@@ -61,8 +61,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '@/styles/variables';
 .main {
-    background-color: #f5f7fa;
+    background-color: $backgroung-secSix;
     background-image: url('../assets/maxcoach-shape-03.png');
     background-repeat: no-repeat;
     background-size: 100%;
@@ -74,16 +75,16 @@ export default {
     align-items: center;
     .info {
         p {
-            color: #a3b1cd;
+            color: $primary-color-text;
             span {
-                color: #ef743b;
+                color: $color-btn;
                 text-decoration: underline;
             }
         }
     }
     .title {
         p {
-            color: #73c6f1;
+            color: $primary-color-p
         }
         h2 {
             font-weight: 900;
@@ -105,10 +106,10 @@ export default {
             position: absolute;
             bottom: 50px;
             p, .calendar {
-               color: lightgray; 
+               color: $primary-color-text; 
             }
             .text {
-                background-color: white;
+                background-color: $color-white;
                 padding: 15px;
             }
             .poster {
@@ -130,7 +131,7 @@ export default {
         .text {
             position: absolute;
             bottom: 0;
-            color: white;
+            color: $color-white;
             padding: 10px;
         }
     }

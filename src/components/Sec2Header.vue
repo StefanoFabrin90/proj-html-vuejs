@@ -72,9 +72,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '@/styles/variables';
 .homepage {
     width: 100vw;
-    color: gray;
+    color: $primary-color-text;
     .logoBrand {
         img {
             width: 50%;
@@ -98,6 +99,11 @@ export default {
         list-style: none;
         .social {
             padding-right: 2rem;
+            line-height: 20px;
+            i {
+                line-height: 20px;
+                vertical-align: middle;
+            }
         }
     }
 }

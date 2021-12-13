@@ -60,13 +60,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '@/styles/variables';
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     .title {
         p {
-            color: #73c6f1;
+            color: $primary-color-p;
         }
         h2 {
             font-weight: 900;
@@ -74,7 +75,7 @@ export default {
     }
     .content {
         p {
-            color: #a3b1cd;
+            color: $primary-color-text;
         }
         .text {
             display: flex;

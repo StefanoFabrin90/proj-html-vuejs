@@ -24,8 +24,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '@/styles/variables';
 .footer {
-    background-color: #244186;
+    background-color: $backgroung-footer;
     position: relative;
     .poster-right {
         position: absolute;
@@ -39,7 +40,7 @@ export default {
         height: 100%;
     }
     .container {
-        color: white;
+        color: $color-white;
         .text {
             z-index: 1;
             h2 {
@@ -58,13 +59,13 @@ export default {
                         color: black;
                     }
                 input {
-                    background-color: #244186;
-                    color: white;
+                    background-color: $backgroung-footer;
+                    color: $color-white;
                     font-size: 25px;
                     width: 80%;
                     height: 35px;
                     border: 0;
-                    border-bottom: 1px solid white;
+                    border-bottom: 1px solid $color-white;
                     outline: none;
                     transition: border .3s;
                     &:focus {

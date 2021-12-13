@@ -28,9 +28,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '@/styles/variables';
 .hero {
     height: 400px;
-    background-color:#fbf9f6;
+    background-color:$backgroung-hero;
     display: flex;
     position: relative;
     .column-right {
@@ -75,12 +76,12 @@ export default {
         align-items: center;
         justify-content: center;
         p {
-            color: #6fc6f1;
+            color: $primary-color-p;
         }
         .btnHero {
             padding: 8px 40px;
-            background-color: #ef6f31;
-            color: white;
+            background-color: $color-btn;
+            color: $color-white;
             margin-top: 20px;
         }
     }

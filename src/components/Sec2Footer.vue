@@ -81,6 +81,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '@/styles/variables';
 .footer {
     position: relative;
 }
@@ -89,11 +90,12 @@ export default {
     .copyright {
         font-size: 12px;
         padding-top: 100px;
+        color: $primary-color-text;
     }
     .column {
         h4 {
             padding-bottom: 1rem;
-            color: black;
+            color: $color-black;
             font-weight: 700;
         }
     }
@@ -102,6 +104,7 @@ export default {
             padding-left: 0;
             li {
                 padding: 5px 0px;
+                color: $primary-color-text;
             }
         }
         .item {
@@ -111,6 +114,7 @@ export default {
             li {
                 padding: 10px 40px 10px 0px;
                 font-size: 30px;
+                color: $primary-color-text;
             }
         }
     }
@@ -119,6 +123,7 @@ export default {
             padding-left: 0;
             li {
                 padding: 5px 0px;
+                color: $primary-color-text;
             }
         }
     }
@@ -132,7 +137,7 @@ export default {
         }
         h4 {
             span {
-                color: #ef793f;
+                color: $color-btn;
                 font-size: 16px;
                 vertical-align: middle;
             }
@@ -140,7 +145,7 @@ export default {
     }
     .navigation {
         a {
-            color: white;
+            color: color-white;
         }
         position: absolute;
         bottom: 0;
@@ -149,7 +154,7 @@ export default {
         height: 40px;
         text-align: center;
         line-height: 40px;
-        background-color: #ef793f;
+        background-color: $color-btn;
         border-radius: 50%;
         cursor: pointer;
         i {
