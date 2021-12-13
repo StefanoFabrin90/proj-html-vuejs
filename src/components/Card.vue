@@ -4,8 +4,16 @@
         <div class="p-3 itemCard">
             <p> {{ textOne }} </p>
             <h5> {{ title }} </h5>
-            <i class="fas fa-file-alt"></i><span> {{ textTwo }} </span>
-            <i class="fas fa-user"></i><span> {{ textThree }} </span>
+            <div class="d-flex item-text">
+                <div class="d-flex align-items-baseline">
+                    <i class="fas fa-file-alt"></i>
+                    <span> {{ textTwo }} </span>
+                </div>
+                <div class="d-flex align-items-baseline">
+                    <i class="fas fa-user p"></i>
+                    <span> {{ textThree }} </span>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -31,9 +39,11 @@ export default {
     p {
         color: $color-btn;
     }
-    i, span {
-        color: $primary-color-text;
-        padding: 10px 10px 0px 0px;
+    .item-text {
+        padding: 10px 3px 0px 0px;
+        i {
+            padding-right: 3px;
+        }
     }
     .itemCard {
         border: 1px solid transparent;
@@ -41,8 +51,8 @@ export default {
             border: 1px solid $color-btn;
             background-color: $color-white;
             position: absolute;
-            bottom: 50px;
-            width: 80%;
+            bottom: 60px;
+            width: 85%;
         }
     }
 }

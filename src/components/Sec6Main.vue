@@ -15,8 +15,14 @@
                             <p>Artist</p>
                             <h5>Brush Strokes Energize Trees in Paintings</h5>
                             <div class="d-flex align-items-baseline calendar">
-                                <i class="far fa-calendar"></i><span>May 15, 2020</span>
-                                <i class="far fa-eye"></i><span>688 views</span>
+                                <div class="d-flex align-items-baseline days">
+                                    <i class="far fa-calendar"></i>
+                                    <span>May 15, 2020</span>
+                                </div>
+                                <div class="d-flex align-items-baseline">
+                                    <i class="far fa-eye"></i>
+                                    <span>688 views</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -26,8 +32,14 @@
                         <p>Artist</p>
                         <h5>Coonection Between Self-Portraits and Identity</h5>
                         <div class="d-flex align-items-baseline calendar">
-                            <i class="far fa-calendar"></i><span>May 15, 2020</span>
-                            <i class="far fa-eye"></i><span>688 views</span>
+                            <div class="d-flex align-items-baseline days">
+                                <i class="far fa-calendar"></i>
+                                <span>May 15, 2020</span>
+                            </div>
+                            <div class="d-flex align-items-baseline">
+                                <i class="far fa-eye"></i>
+                                <span>688 views</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -40,8 +52,14 @@
                             <p>Artist</p>
                             <h5>Pocket-Sikez Notebooks Hold Miniature Paintings</h5>
                             <div class="d-flex align-items-baseline calendar">
-                                <i class="far fa-calendar"></i><span>May 15, 2020</span>
-                                <i class="far fa-eye"></i><span>688 views</span>
+                                <div class="d-flex align-items-baseline days">
+                                    <i class="far fa-calendar"></i>
+                                    <span>May 15, 2020</span>
+                                </div>
+                                <div class="d-flex align-items-baseline">
+                                    <i class="far fa-eye"></i>
+                                    <span>688 views</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -96,14 +114,13 @@ export default {
     .cardItem {
         height: 500px;
         width: 350px;
-        //border: 1px solid black;
         position: relative;
         p {
             text-transform: uppercase;
         }
-        i, span {
-                padding: 10px 10px 0px 0px;
-            }
+        i {
+            padding-right: 5px;
+        }
         .item {
             width: 300px;
             position: absolute;
@@ -114,6 +131,9 @@ export default {
             .text {
                 background-color: $color-white;
                 padding: 15px;
+                .days {
+                    padding-right: 20px;
+                }
             }
             .poster {
                 img {
@@ -136,6 +156,9 @@ export default {
             bottom: 0;
             color: $color-white;
             padding: 10px;
+            .days {
+                padding-right: 20px;
+            }
         }
     }
 }
