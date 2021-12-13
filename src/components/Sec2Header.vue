@@ -87,9 +87,14 @@ export default {
         li {
             align-items: baseline;
             padding-right: 2rem;
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
             i {
                 font-size: 10px;
                 padding: 0 5px;
+                cursor: pointer;
             }
         }
     }

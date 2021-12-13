@@ -35,10 +35,13 @@ export default {
         text-align: center;
         padding: 0 50px;
         h1 {
-            font-weight: 900;
+            font-weight: $font-weight-primary;
         }
         p {
             color: $primary-color-p;
+            font-family: $fontFamily;
+            overflow: $overflow;
+            font-size: $fontsixe-p;
         }
     }
     .text {
@@ -47,6 +50,13 @@ export default {
             background-color: $backgroung-btn;
             color: $color-btn;
             padding: 8px 40px;
+            transition: transform .4s;
+            border: 1px solid transparent;
+            &:hover {
+                transform: scale(0.9);
+                box-shadow: 0 0 0 2px $color-btn;;
+                border: 1px solid white;
+            } 
         }
     }
 }

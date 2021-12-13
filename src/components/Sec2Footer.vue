@@ -65,11 +65,11 @@
             <div class="text-center copyright">
                 <p>	&#169; Maxcoach. All Rights Reserved</p>
             </div>
-            <div class="navigation mb-3">
-                <a href="#1">
+            <a href="#1">
+                <div class="navigation mb-3">
                     <i class="fas fa-long-arrow-alt-up"></i>
-                </a>
-            </div>
+                </div> 
+            </a>
         </div>
     </section>
 </template>
@@ -86,7 +86,7 @@ export default {
     position: relative;
 }
 .container {
-    font-weight: 200;
+    font-weight: $font-weight-third;
     .copyright {
         font-size: 12px;
         padding-top: 100px;
@@ -105,6 +105,10 @@ export default {
             li {
                 padding: 5px 0px;
                 color: $primary-color-text;
+                cursor: pointer;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
         .item {
@@ -114,6 +118,7 @@ export default {
             li {
                 padding: 10px 40px 10px 0px;
                 font-size: 30px;
+                cursor: pointer;
                 color: $primary-color-text;
             }
         }
@@ -123,7 +128,11 @@ export default {
             padding-left: 0;
             li {
                 padding: 5px 0px;
+                cursor: pointer;
                 color: $primary-color-text;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }
@@ -143,10 +152,10 @@ export default {
             }
         }
     }
+    a {
+        color: $color-white;
+    }
     .navigation {
-        a {
-            color: color-white;
-        }
         position: absolute;
         bottom: 0;
         right: 50px;

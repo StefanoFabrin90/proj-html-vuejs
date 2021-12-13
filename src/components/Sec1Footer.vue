@@ -46,7 +46,7 @@ export default {
             h2 {
                 font-size: 3rem;
                 text-align: end;
-                font-weight: 200;
+                font-weight: $font-weight-third;
             }
         }
         .email {

@@ -67,6 +67,9 @@ export default {
         text-align: center;
         p {
         color: $primary-color-p;
+        font-family: $fontFamily;
+        overflow: $overflow;
+        font-size: $fontsixe-p;
         }
     }
     
@@ -83,7 +86,7 @@ export default {
                 }
                 h5 {
                     font-size: 18px;
-                    font-weight: 100;
+                    font-weight: $font-weight-third
                 }
             }
         }

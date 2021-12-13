@@ -68,9 +68,12 @@ export default {
     .title {
         p {
             color: $primary-color-p;
+            font-family: $fontFamily;
+            overflow: $overflow;
+            font-size: $fontsixe-p;
         }
         h2 {
-            font-weight: 900;
+            font-weight: $font-weight-primary;
         }
     }
     .content {

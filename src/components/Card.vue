@@ -24,23 +24,22 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '@/styles/variables';
 .card {
     border: none;
     position: relative;
     p {
-        color: #f07c44;
+        color: $color-btn;
     }
     i, span {
-        color: #595959;
+        color: $primary-color-text;
         padding: 10px 10px 0px 0px;
-        transition: transfrom .2s;
     }
     .itemCard {
         border: 1px solid transparent;
         &:hover {
-            border: 1px solid #f07c44;
-            //transform: scale(1.1);
-            background-color: white;
+            border: 1px solid $color-btn;
+            background-color: $color-white;
             position: absolute;
             bottom: 50px;
             width: 80%;

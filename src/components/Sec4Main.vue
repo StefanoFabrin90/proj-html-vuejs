@@ -70,10 +70,13 @@ export default {
         flex-direction: column;
         align-items: center;
         p {
-            color: $primary-color-p
+            color: $primary-color-p;
+            font-family: $fontFamily;
+            overflow: $overflow;
+            font-size: $fontsixe-p;
         }
         h1 {
-            font-weight: 900;
+            font-weight: $font-weight-primary;
         }
         .testimonial {
             background-color: white;

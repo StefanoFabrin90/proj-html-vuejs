@@ -77,12 +77,22 @@ export default {
         justify-content: center;
         p {
             color: $primary-color-p;
+            font-family: $fontFamily;
+            overflow: hidden;
+            font-size: 3rem;
         }
         .btnHero {
             padding: 8px 40px;
             background-color: $color-btn;
             color: $color-white;
             margin-top: 20px;
+            transition: transform .4s;
+            border: 1px solid transparent;
+            &:hover {
+                transform: scale(0.9);
+                box-shadow: 0 0 0 2px $color-btn;;
+                border: 1px solid white;
+            } 
         }
     }
     .column-left {

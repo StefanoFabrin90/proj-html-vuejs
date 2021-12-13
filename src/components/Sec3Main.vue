@@ -46,6 +46,7 @@ export default {
         left: 50%;
         transform: translate(-5%, -50%);
         z-index: 2;
+        cursor: pointer;
     }
     .circle-right {
         position: absolute;
