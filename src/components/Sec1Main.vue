@@ -27,22 +27,22 @@ export default {
                 {
                     image: require('@/assets/artist-box-image-01.png'),
                     title: 'Online Course',
-                    subTitle: 'Online at coaching now offers you a very powerful way to redesign your artist mind',
+                    subTitle: 'Online at coaching now offers you a very powerful way to redesign your artist mind.',
                 },
                 {
                     image: require('@/assets/artist-box-image-02.png'),
                     title: 'One to One',
-                    subTitle: 'Getting the necessary clarity about the current to help you improve your ability',
+                    subTitle: 'Getting the necessary clarity about the current to help you improve your ability.',
                 },
                 {
                     image: require('@/assets/artist-box-image-03.png'),
                     title: 'Anywhere',
-                    subTitle: 'Access to valuable and portable program which you setup and live anywhere you want',
+                    subTitle: 'Access to valuable and portable program which you setup and live anywhere you want.',
                 },
                 {
                     image: require('@/assets/artist-box-image-04.png'),
                     title: 'On Time',
-                    subTitle: "Punctuality is our top priority because it's an essetial criteria to acces a program quality ",
+                    subTitle: "Punctuality is our top priority because it's an essetial criteria to acces a program quality.",
                 },
             ]
         }

@@ -3,7 +3,7 @@
         <div class="container mt-5 mb-5">
             <div class="row">
                 <div class="col-4 column column-left">
-                    <h4>Addres</h4>
+                    <h4>Address</h4>
                     <ul class="information">
                         <li>382 NE 191st St# 87394 Miami, FL 3319-3899</li>
                         <li>+1(305) 547-9909 (9am -5pm EST, Monday -Friday)</li>

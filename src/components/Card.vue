@@ -5,7 +5,7 @@
             <p> {{ textOne }} </p>
             <h5> {{ title }} </h5>
             <div class="d-flex item-text">
-                <div class="d-flex align-items-baseline">
+                <div class="d-flex align-items-baseline itemFont">
                     <i class="fas fa-file-alt"></i>
                     <span> {{ textTwo }} </span>
                 </div>
@@ -40,9 +40,12 @@ export default {
         color: $color-btn;
     }
     .item-text {
-        padding: 10px 3px 0px 0px;
-        i {
+        padding-top: 10px;
+        .itemFont {
+            padding-right: 20px;
+            i {
             padding-right: 3px;
+            }
         }
     }
     .itemCard {

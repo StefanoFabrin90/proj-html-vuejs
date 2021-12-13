@@ -6,7 +6,7 @@
                     <img src="../assets/artist-quote-icon.png" alt="image">
                 </div>
                 <div class="col-6 title">
-                    <h1>I coach and mentor visual artists, like you, to create Like You Mean It</h1>
+                    <h1>I coach and mentor visual artists, like you, to Create Like You Mean It</h1>
                     <p>Martin Garrix</p>
                 </div>
                 <div class="col-6 text">

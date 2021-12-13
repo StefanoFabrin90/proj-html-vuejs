@@ -6,7 +6,10 @@
             </div>
             <div class="d-flex align-items-baseline">
                 <i class="far fa-clock"></i>
-                <p class="clock">{{ dateNow }}</p>
+                <p class="clock">
+                    {{ dateNow }}
+                    <span>{{dateDays}}</span>
+                </p>
                 <button type="button" class="btn geticket">Get ticket</button>
             </div>
         </div>
@@ -20,6 +23,7 @@ export default {
     data() {
         return {
             dateNow: '',
+            dateDays: '',
         }
     },
     created(){
@@ -28,7 +32,8 @@ export default {
     methods: {
         createDate() {
             const today = dayjs();
-            this.dateNow = today.format ('HH:mm:ss A');
+            this.dateNow = today.format ('HH:mm:ss a');
+            this.dateDays = today.format ('dddd');
         }
     },
 }

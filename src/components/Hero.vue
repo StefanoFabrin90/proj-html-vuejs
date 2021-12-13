@@ -107,10 +107,10 @@ export default {
             right: 200px;
         }
         .third {
-            width: 180px;
+            width: 160px;
             position: absolute;
             bottom: 20px;
-            right: 240px;
+            right: 260px;
             z-index: 1;
         }
         .fourth {

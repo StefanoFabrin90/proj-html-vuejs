@@ -8,7 +8,10 @@
             <div class="cardTestimonial">
                 <div class="row">
                     <div class="col-4" v-for="(item, index) in cardTestimonials" :key="`item-${index}`">
-                        <div class="testimonial">
+                        <div 
+                            class="testimonial"
+                            :class="{active: index === activeSlide}"
+                        >
                             <h5>{{item.title}}</h5>
                             <h6>{{item.subtitle}}</h6>
                             <div class="information">
@@ -23,6 +26,10 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="mb-5 circle">
+                <i class="fas fa-arrow-left" @click="prevSlide"></i>
+                <i class="fas fa-arrow-right" @click="nextSlide"></i>
             </div>
         </div>
     </section>
@@ -39,25 +46,42 @@ export default {
                     subtitle: "I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.",
                     avatar: require("@/assets/artist-testimonial-avatar-04.jpg"),
                     Name: "Mina Hollance",
-                    job: "/Freelancer",
+                    job: "/ Freelancer",
                 },
                 {
                     title: "It's a choice of quality for people with special needs",
                     subtitle: "I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to to make things right and shine. MaxCoach guys just got to me.",
                     avatar: require("@/assets/artist-testimonial-avatar-03.jpg"),
                     Name: "Florence Themes",
-                    job: "/Multimedia Admin",
+                    job: "/ Multimedia Admin",
                 },
                 {
                     title: "Professional team of specialist and passionate mentors at reach",
-                    subtitle: "I need to get a certification for English profieciency and MaxCosch is my best choise. Their tutors are smart and professional whr dealing whth students",
+                    subtitle: "I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing whith students",
                     avatar: require("@/assets/artist-testimonial-avatar-02.jpg"),
                     Name: "Madley Pondor",
-                    job: "/IT Specialist",
+                    job: "/ IT Specialist",
                 },
-            ]
+            ],
+            activeSlide: 0,
         }
-    }
+    },
+    methods: {
+        prevSlide() {
+            this.activeSlide--;
+
+            if (this.activeSlide < 0) {
+                this.activeSlide = this.cardTestimonials.length -1;
+            }
+        },
+        nextSlide () {
+            this.activeSlide++;
+
+            if (this.activeSlide > this.cardTestimonials.length -1) {
+                this.activeSlide = 0;
+            }
+        }
+    },
 }
 </script>
 
@@ -83,6 +107,7 @@ export default {
             box-shadow: 0 15px 10px -10px rgba(0,0,0, .2);
             padding: 30px;
             margin-bottom: 30px;
+            opacity: 0.2;
             h5 {
                 color: $color-black;
             }
@@ -105,6 +130,24 @@ export default {
                         color: $primary-color-text;
                         font-size: 12px;
                     }
+                }
+            }
+        }
+        .active {
+            opacity: 1;
+        }
+        .circle {
+            i {
+                color:$primary-color-text;
+                font-size: 20px;
+                padding: 10px;
+                border: 1px solid $primary-color-text;
+                border-radius: 50%;
+                margin-right: 15px;
+                cursor: pointer;
+                &:hover {
+                    color: $color-black;
+                    border: 1px solid $color-black;
                 }
             }
         }

@@ -3,7 +3,7 @@
         <div class="container mt-5 mb-5">
             <div class="title text-center mb-5">
                 <p>Article and Tips</p>
-                <h2>Let's Work Together</h2>
+                <h2>Latest From the Blog</h2>
             </div>
             <div class="d-flex mb-5">
                 <div class="cardItem">
@@ -30,7 +30,7 @@
                 <div class="cardItem column-central">
                     <div class="text">
                         <p>Artist</p>
-                        <h5>Coonection Between Self-Portraits and Identity</h5>
+                        <h5>Connection Between Self-Portraits and Identity</h5>
                         <div class="d-flex align-items-baseline calendar">
                             <div class="d-flex align-items-baseline days">
                                 <i class="far fa-calendar"></i>
@@ -50,7 +50,7 @@
                         </div>
                         <div class="text">
                             <p>Artist</p>
-                            <h5>Pocket-Sikez Notebooks Hold Miniature Paintings</h5>
+                            <h5>Pocket-Sized Notebooks Hold Miniature Paintings</h5>
                             <div class="d-flex align-items-baseline calendar">
                                 <div class="d-flex align-items-baseline days">
                                     <i class="far fa-calendar"></i>
@@ -120,6 +120,11 @@ export default {
         }
         i {
             padding-right: 5px;
+        }
+        .text {
+            h5 {
+                font-weight: $font-weight-secondary;
+            }
         }
         .item {
             width: 300px;
