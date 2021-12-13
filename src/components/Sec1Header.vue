@@ -28,7 +28,7 @@ export default {
     methods: {
         createDate() {
             const today = dayjs();
-            this.dateNow = today.format ('HH:mm:ss');
+            this.dateNow = today.format ('HH:mm:ss A');
         }
     },
 }
