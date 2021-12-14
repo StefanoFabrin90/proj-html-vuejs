@@ -77,9 +77,6 @@ export default {
                 }
                 i {
                     font-size: 25px;
-                    &:focus {
-                        color: black;
-                    } 
                 }
             }
         }
