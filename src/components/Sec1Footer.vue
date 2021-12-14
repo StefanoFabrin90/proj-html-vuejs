@@ -10,6 +10,7 @@
                 <div class="col-8 email">
                     <div class="input-group mb-3 align-items-center textemail">
                         <input type="text" placeholder="Your e-mail">
+                        <i class="fas fa-arrow-right"></i>
                     </div>
                 </div>
             </div>
@@ -74,6 +75,9 @@ export default {
                     &:hover {
                         border-bottom: 1px solid black;
                     }
+                }
+                i {
+                    font-size: 25px;
                 }
             }
         }
