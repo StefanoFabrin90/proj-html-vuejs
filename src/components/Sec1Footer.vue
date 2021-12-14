@@ -55,8 +55,10 @@ export default {
             display: flex;
             .textemail {
                 padding-left: 20px;
-                transition: color .3s;
-                    &:hover {
+                    &:hover input{
+                        border-bottom: 1px solid black;
+                    }
+                    &:hover i{
                         color: black;
                     }
                 input {
@@ -71,13 +73,13 @@ export default {
                     transition: border .3s;
                     &:focus {
                         border-bottom: 1px solid black;
-                    }
-                    &:hover {
-                        border-bottom: 1px solid black;
-                    }
+                    } 
                 }
                 i {
                     font-size: 25px;
+                    &:focus {
+                        color: black;
+                    } 
                 }
             }
         }
